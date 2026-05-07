@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Sanskruti Didi</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+.page {
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page1 { display: flex; background: #ffe6f0; }
+#page2 { background: #e6f7ff; }
+
+h1 {
+  font-size: 28px;
+  color: #ff4081;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background: #ff4081;
+  color: white;
+  cursor: pointer;
+}
+
+/* Cake */
+.cake {
+  margin-top: 20px;
+  width: 120px;
+  height: 100px;
+  background: pink;
+  border-radius: 10px;
+  position: relative;
+}
+.candle {
+  width: 10px;
+  height: 30px;
+  background: #fff;
+  position: absolute;
+  top: -30px;
+  left: 55px;
+}
+.flame {
+  width: 10px;
+  height: 10px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+}
+
+/* Balloons */
+.balloon {
+  width: 40px;
+  height: 50px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  animation: float 6s infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh); }
+  100% { transform: translateY(-10vh); }
+}
+
+/* Love tree */
+.tree {
+  margin-top: 20px;
+}
+.heart {
+  color: red;
+  font-size: 24px;
+}
+</style>
+
+<script>
+function nextPage() {
+  document.getElementById("page1").style.display = "none";
+  document.getElementById("page2").style.display = "flex";
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page">
+  <h1>?? Happy Birthday Sanskruti Didi ??</h1>
+
+  <div class="cake">
+    <div class="candle">
+      <div class="flame"></div>
+    </div>
+  </div>
+
+  <p style="padding: 20px;">
+    You are truly special ??  
+    Today is all about you!
+  </p>
+
+  <button onclick="nextPage()">Click for Surprise ??</button>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+
+  <!-- Balloons -->
+  <div class="balloon" style="left:10%; background:#ff4d4d;"></div>
+  <div class="balloon" style="left:30%; background:#4da6ff; animation-delay:2s;"></div>
+  <div class="balloon" style="left:60%; background:#66ff66; animation-delay:4s;"></div>
+  <div class="balloon" style="left:80%; background:#ffcc00; animation-delay:1s;"></div>
+
+  <h1>The world got better since</h1>
+  <h2 style="color:#333;">140246 hours & 30 minutes ??</h2>
+
+  <p style="padding: 20px; max-width: 300px;">
+    I don’t think you even realize how much happiness you bring into my life.  
+    You make everything lighter, warmer, and better… just by being you. ??
+  </p>
+
+  <!-- Love Tree -->
+  <div class="tree">
+    <div class="heart">?? ?? ??</div>
+    <div class="heart">?? ?? ??</div>
+    <div class="heart">?? ?? ??</div>
+    <div style="font-size:30px;">??</div>
+  </div>
+
+  <p>
+    I love you so much ??  
+    Always keep smiling ?
+  </p>
+
+</div>
+
+</body>
+</html>
